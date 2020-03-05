@@ -30,3 +30,32 @@ console.log(result);
 //== vs ===
 //== dont check type,,just check the value
 //=== check the type whether it is int is string
+
+
+//map filter
+
+const num=[1,2,3,4,5];
+const output=[];
+for(let i=0;i<num.length;i++)
+{
+    const element=num[i];
+    const result=element*element;
+    output.push(result);
+
+}
+console.log(output);
+
+/**function square(element)
+{
+return element*element;
+}
+const result1=num.map(function(element){
+    return element*element;
+})*/
+
+const result1=num.map(x=>x*x);
+console.log(result1);
+
+
+const  result3=num.filter(x=> x>5);
+console.log(result3);
